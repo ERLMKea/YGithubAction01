@@ -7,8 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: cxecho "Hello World"
+        run: echo "Hello World"
+      - name: echo pwd
+        run: echo pwd
       - name: multiline script
         run: |
           node -v
           npm -v
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
