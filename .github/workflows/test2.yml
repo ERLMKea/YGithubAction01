@@ -1,0 +1,10 @@
+name: why not code complete
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string2
+        run: echo "Hello World nr2 script"
